@@ -31,8 +31,6 @@ if __name__ == '__main__':
 
     # models
     model = unet(channels=3)
-    ### correct kernel 888
-    ### ori enh model 870
     model.load_weights('models/Unet_921-0.0012.hdf5')
     test_generator = DataGenerator(partition['test'], **params)
 
